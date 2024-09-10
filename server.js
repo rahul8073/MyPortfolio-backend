@@ -42,7 +42,9 @@ app.post('/api/contact', async (req, res) => {
     res.status(500).json({ message: 'Failed to send email.' });
   }
 });
-
+app.get('/',(req,res)=>{
+    res.send("hello");
+})
 // Start the server
 app.listen(5000, () => {
   console.log('Server running on port 5000');
